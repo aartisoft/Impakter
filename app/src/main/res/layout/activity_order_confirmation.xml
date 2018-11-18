@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ContinueAsGuestActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:src="@drawable/ic_back"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_50"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_shopping"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_100"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_shopping_complete" />
+
+            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_shopping"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="@string/msg_thank_you"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/sp_18" />
+
+            <com.impakter.impakter.widget.textview.TextViewHeeboLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:text="Your order no: #8754727345 " />
+
+            <com.impakter.impakter.widget.textview.TextViewHeeboLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_40"
+                android:gravity="center"
+                android:text="@string/order_info_has_sent_email" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_go_to_my_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_8"
+            android:background="@drawable/bg_button_blue_border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_12">
+
+            <com.impakter.impakter.widget.textview.TextViewHeeboMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/go_to_my_order"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color_blue"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_go_to_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_8"
+            android:background="@drawable/bg_button_blue_border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_12">
+
+            <com.impakter.impakter.widget.textview.TextViewHeeboMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/go_to_home"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color_blue"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_go_to_my_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_8"
+            android:background="@drawable/bg_button_blue_border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_12">
+
+            <com.impakter.impakter.widget.textview.TextViewHeeboMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/go_to_my_profile"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color_blue"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/media_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_4"
+            android:paddingBottom="@dimen/dp_16">
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:layout_gravity="right"
+                android:padding="@dimen/dp_2"
+                android:layout_marginTop="@dimen/dp_4"
+                android:src="@drawable/ic_close" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_product"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_130"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image1" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_16">
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:id="@+id/tv_product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wool Coat"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/sp_16" />
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboLight
+                        android:id="@+id/tv_brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_product_name"
+                        android:text="Brand"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textAllCaps="true" />'
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboLight
+                        android:id="@+id/tv_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_brand"
+                        android:text="SKU: 324722109 - Black" />
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:id="@+id/tv_option"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_description"
+                        android:text="Small"
+                        android:textColor="@color/text_color_primary" />
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text="£ 260"
+                        android:layout_marginRight="@dimen/dp_16"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/sp_16" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentBottom="true">
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                            android:id="@+id/tv_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/qt"
+                            android:textColor="@color/text_color_primary"
+                            android:textSize="@dimen/sp_16" />
+
+                        <ImageView
+                            android:id="@+id/iv_decrease"
+                            android:layout_width="@dimen/dp_14"
+                            android:layout_height="@dimen/dp_14"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:src="@drawable/ic_arrow_left"/>
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboLight
+                            android:id="@+id/tv_quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:text="1"
+                            android:textSize="@dimen/sp_18" />
+
+                        <ImageView
+                            android:id="@+id/iv_increase"
+                            android:layout_width="@dimen/dp_14"
+                            android:layout_height="@dimen/dp_14"
+                            android:src="@drawable/ic_arrow_right"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

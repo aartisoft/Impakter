@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/main.collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_160">
+
+                    <ImageView
+                        android:id="@+id/iv_cover"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_100"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/product" />
+
+                    <ImageView
+                        android:id="@+id/iv_avatar"
+                        android:layout_width="@dimen/dp_120"
+                        android:layout_height="@dimen/dp_120"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:src="@drawable/ic_red_circle" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:id="@+id/tv_brand_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Johnson Johnson"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/sp_16" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:src="@drawable/ic_red_circle" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Healthcare |"
+                                android:textSize="@dimen/sp_14" />
+
+                            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                                android:id="@+id/tv_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" LONDON"
+                                android:textSize="@dimen/sp_14" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:id="@+id/tv_number_follow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="500 following"
+                        android:textSize="@dimen/sp_12" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_follow"
+                            android:layout_width="@dimen/dp_120"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_blue_button"
+                            android:text="@string/Follow"
+                            android:textAllCaps="true"
+                            android:textColor="@color/text_color_white" />
+
+                        <Button
+                            android:id="@+id/btn_message"
+                            android:layout_width="@dimen/dp_120"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_30"
+                            android:background="@drawable/bg_button_blue_border"
+                            android:text="@string/messages"
+                            android:textAllCaps="true"
+                            android:textColor="@color/text_color_blue" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/color_gray1"
+            app:tabMode="fixed"></android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

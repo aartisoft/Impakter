@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.impakter.impakter.widget.textview.TextViewHeeboMedium xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_text"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="?attr/selectableItemBackground"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:singleLine="true"
+    android:textAllCaps="false"
+    android:textColor="@color/custom_tab"
+    android:textSize="@dimen/sp_16">
+
+</com.impakter.impakter.widget.textview.TextViewHeeboMedium>

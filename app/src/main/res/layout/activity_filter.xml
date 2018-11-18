@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:src="@drawable/ic_back" />
+
+        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:text="@string/filter"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--Sort By-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_8">
+
+                <com.impakter.impakter.widget.textview.TextViewHeeboMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:layout_weight="1"
+                    android:text="@string/sort_by"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/sp_16" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginRight="@dimen/dp_30"
+                    android:src="@drawable/ic_arrow_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:text="@string/our_picks"
+                        android:textColor="@color/text_color_primary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:text="@string/new_items"
+                        android:textColor="@color/text_color_primary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:text="@string/price_hight_first"
+                        android:textColor="@color/text_color_primary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:text="@string/price_low_first"
+                        android:textColor="@color/text_color_primary" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--PRODUCT-->
+            <com.impakter.impakter.widget.textview.TextViewHeeboMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:padding="@dimen/dp_8"
+                android:text="@string/product"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/sp_16" />
+
+            <ExpandableListView
+                android:id="@+id/lv_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"></ExpandableListView>
+            <!--SIZE-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_8">
+
+                <com.impakter.impakter.widget.textview.TextViewHeeboMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:layout_weight="1"
+                    android:text="@string/sort_by"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/sp_16" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginRight="@dimen/dp_30"
+                    android:src="@drawable/ic_arrow_down" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"></android.support.v7.widget.RecyclerView>
+            <!--PRICE-->
+            <!--PRODUCT-->
+            <com.impakter.impakter.widget.textview.TextViewHeeboMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:padding="@dimen/dp_8"
+                android:text="@string/price"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/sp_16" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button_gray_border"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_12"
+                    android:paddingTop="@dimen/dp_12"
+                    android:textColor="@color/text_color_primary"
+                    android:text="0 $ Min" />
+
+                <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button_gray_border"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_12"
+                    android:textColor="@color/text_color_primary"
+                    android:paddingTop="@dimen/dp_12"
+                    android:text="1000 $ Max" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

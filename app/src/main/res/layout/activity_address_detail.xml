@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AddressDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:src="@drawable/ic_back" />
+
+        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:text="@string/address_details"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/sp_18" />
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_16">
+
+                <com.impakter.impakter.widget.textview.TextViewHeeboMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/primary_address"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="@dimen/sp_16" />
+
+                <LinearLayout
+                    android:id="@+id/layout_primary_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_blue_border"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_16">
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                            android:id="@+id/tv_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/text_color_primary"
+                            android:textSize="@dimen/sp_16" />
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                            android:id="@+id/tv_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                            android:id="@+id/tv_city_country"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                            android:id="@+id/tv_phone_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:src="@drawable/ic_blue_arrow_right" />
+                </LinearLayout>
+
+                <com.impakter.impakter.widget.textview.TextViewHeeboMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:text="@string/other_address"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="@dimen/sp_16" />
+
+                <LinearLayout
+                    android:id="@+id/layout_other_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_blue_border"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_16">
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                            android:id="@+id/tv_user_name_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_primary"
+                            android:textSize="@dimen/sp_16" />
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                            android:id="@+id/tv_other_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                            android:id="@+id/tv_other_city_country"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                            android:id="@+id/tv_other_phone_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:src="@drawable/ic_blue_arrow_right" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.impakter.impakter.widget.MyButton
+        android:id="@+id/btn_add_new_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/bg_button_blue_border"
+        android:text="@string/add_new_address"
+        android:textAllCaps="true"
+        android:textColor="@color/text_color_blue" />
+</LinearLayout>

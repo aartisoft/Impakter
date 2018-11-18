@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"></include>
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_white">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/main.collapsing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="@dimen/dp_40"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:src="@drawable/ic_back"
+                        android:visibility="gone" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_160">
+
+                        <ImageView
+                            android:id="@+id/iv_cover"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_100"
+                            android:background="@color/color_gray_5"
+                            android:scaleType="centerCrop" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_avatar"
+                            android:layout_width="@dimen/dp_120"
+                            android:layout_height="@dimen/dp_120"
+                            android:layout_gravity="bottom|center_horizontal" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_marginTop="@dimen/dp_8"
+                            android:textColor="@color/text_color_primary"
+                            android:textSize="@dimen/sp_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_8"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                                android:id="@+id/tv_career"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:singleLine="true"
+                                android:text="Healthcare"
+                                android:textSize="@dimen/sp_14" />
+
+                            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text=" | " />
+
+                            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                                android:id="@+id/tv_address"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:singleLine="true"
+                                android:text=" "
+                                android:textSize="@dimen/sp_14" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                                    android:id="@+id/tv_collection"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textColor="@color/text_color_primary"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/collection"
+                                    android:textColor="@color/text_color_primary"
+                                    android:textSize="@dimen/sp_12" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/layout_follower"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_40"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                                    android:id="@+id/tv_follower"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textColor="@color/text_color_primary"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/follower"
+                                    android:textColor="@color/text_color_primary"
+                                    android:textSize="@dimen/sp_12" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lay_following"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_40"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                                    android:id="@+id/tv_following"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textColor="@color/text_color_primary"
+                                    android:textSize="@dimen/sp_20" />
+
+                                <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/following"
+                                    android:textColor="@color/text_color_primary"
+                                    android:textSize="@dimen/sp_12" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.ogaclejapan.smarttablayout.SmartTabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_gravity="center"
+                    app:layout_anchor="@id/appBar"
+                    app:layout_anchorGravity="bottom"
+                    app:layout_collapseMode="pin"
+                    app:stl_clickable="true"
+                    app:stl_customTabTextLayoutId="@layout/custom_tab"
+                    app:stl_customTabTextViewId="@id/custom_text"
+                    app:stl_defaultTabBackground="?attr/selectableItemBackground"
+                    app:stl_defaultTabTextAllCaps="true"
+                    app:stl_defaultTabTextColor="@color/custom_tab"
+                    app:stl_defaultTabTextHorizontalPadding="@dimen/dp_14"
+                    app:stl_defaultTabTextMinWidth="0dp"
+                    app:stl_defaultTabTextSize="@dimen/sp_14"
+                    app:stl_distributeEvenly="false"
+                    app:stl_dividerColor="@android:color/transparent"
+                    app:stl_dividerThickness="1dp"
+                    app:stl_drawDecorationAfterTab="false"
+                    app:stl_indicatorAlwaysInCenter="false"
+                    app:stl_indicatorColor="@color/color_gray1"
+                    app:stl_indicatorCornerRadius="2dp"
+                    app:stl_indicatorGravity="bottom"
+                    app:stl_indicatorInFront="false"
+                    app:stl_indicatorInterpolation="smart"
+                    app:stl_indicatorThickness="2dp"
+                    app:stl_indicatorWidth="auto"
+                    app:stl_indicatorWithoutPadding="false"
+                    app:stl_titleOffset="24dp"
+                    app:stl_underlineColor="@android:color/transparent"
+                    app:stl_underlineThickness="1dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_gray4"></View>
+        </android.support.design.widget.AppBarLayout>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"></android.support.v4.view.ViewPager>
+        <!--</LinearLayout>-->
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

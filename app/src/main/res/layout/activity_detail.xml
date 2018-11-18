@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/main.collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_400">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/viewpager_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></android.support.v4.view.ViewPager>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dp_30"
+                            android:gravity="bottom|center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_share"
+                                android:layout_width="@dimen/dp_40"
+                                android:layout_height="@dimen/dp_40"
+                                android:layout_marginBottom="@dimen/dp_20"
+                                android:src="@drawable/ic_share" />
+
+                            <ImageView
+                                android:id="@+id/iv_favourite"
+                                android:layout_width="@dimen/dp_40"
+                                android:layout_height="@dimen/dp_40"
+                                android:layout_marginBottom="@dimen/dp_20"
+                                android:src="@drawable/ic_favourite" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_100"
+                        android:alpha="0.8"
+                        android:background="@drawable/bg_gradient"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:visibility="gone"></ImageView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/dp_16"
+                            android:paddingRight="@dimen/dp_16">
+
+                            <ImageView
+                                android:id="@+id/iv_back"
+                                android:layout_width="@dimen/dp_32"
+                                android:layout_height="@dimen/dp_32"
+                                android:src="@drawable/ic_white_back" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/iv_shopping"
+                                android:layout_width="@dimen/dp_32"
+                                android:layout_height="@dimen/dp_32"
+                                android:src="@drawable/ic_white_shopping" />
+
+                            <ImageView
+                                android:id="@+id/iv_option"
+                                android:layout_width="@dimen/dp_32"
+                                android:layout_height="@dimen/dp_32"
+                                android:src="@drawable/ic_three_dot" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <com.rd.PageIndicatorView
+                    android:id="@+id/pageIndicatorView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_10"
+                    app:piv_animationType="fill"
+                    app:piv_dynamicCount="true"
+                    app:piv_interactiveAnimation="true"
+                    app:piv_padding="5dp"
+                    app:piv_radius="3dp"
+                    app:piv_selectedColor="@color/color_gray2"
+                    app:piv_unselectedColor="@color/color_gray2"
+                    app:piv_viewPager="@id/viewpager_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_16">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                            android:id="@+id/tv_product_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/text_color_primary"
+                            android:textSize="@dimen/sp_20" />
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                            android:id="@+id/tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/text_color_primary"
+                            android:textSize="@dimen/sp_20" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                            android:id="@+id/tv_brand"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textSize="@dimen/sp_18" />
+
+                        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                            android:id="@+id/rating_bar"
+                            style="@style/Widget.MaterialRatingBar.RatingBar.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_gray_5"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_16">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/select_here"
+                            android:textColor="@color/text_color_primary"
+                            android:textSize="@dimen/sp_18" />
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/to_buy_or_save" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginBottom="@dimen/dp_8"
+                        android:gravity="center_vertical">
+
+                        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/color"
+                            android:textSize="@dimen/sp_16" />
+
+                        <Spinner
+                            android:id="@+id/sp_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:minWidth="@dimen/dp_120"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_white_color" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_red_color" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_blue_color" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_gray_color" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rcv_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_16">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/qt"
+                                android:textSize="@dimen/sp_16" />
+
+                            <Spinner
+                                android:id="@+id/sp_quantity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_20"
+                                android:minWidth="@dimen/dp_60"></Spinner>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/size"
+                                android:textSize="@dimen/sp_16" />
+
+                            <Spinner
+                                android:id="@+id/sp_size"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_20"
+                                android:minWidth="@dimen/dp_60"></Spinner>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            android:id="@+id/tab_detail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            app:layout_anchor="@id/appBar"
+            app:layout_anchorGravity="bottom"
+            app:layout_collapseMode="pin"
+            app:stl_clickable="true"
+            app:stl_customTabTextLayoutId="@layout/custom_tab_text"
+            app:stl_customTabTextViewId="@id/custom_text"
+            app:stl_defaultTabBackground="?attr/selectableItemBackground"
+            app:stl_defaultTabTextAllCaps="true"
+            app:stl_defaultTabTextColor="@color/custom_tab"
+            app:stl_defaultTabTextHorizontalPadding="@dimen/dp_14"
+            app:stl_defaultTabTextMinWidth="0dp"
+            app:stl_defaultTabTextSize="@dimen/sp_14"
+            app:stl_distributeEvenly="false"
+            app:stl_dividerColor="@color/color_white"
+            app:stl_dividerThickness="1dp"
+            app:stl_drawDecorationAfterTab="false"
+            app:stl_indicatorAlwaysInCenter="false"
+            app:stl_indicatorColor="@color/color_gray1"
+            app:stl_indicatorCornerRadius="2dp"
+            app:stl_indicatorGravity="bottom"
+            app:stl_indicatorInFront="false"
+            app:stl_indicatorInterpolation="smart"
+            app:stl_indicatorThickness="2dp"
+            app:stl_indicatorWidth="auto"
+            app:stl_indicatorWithoutPadding="false"
+            app:stl_titleOffset="24dp"
+            app:stl_underlineColor="@color/color_gray4"
+            app:stl_underlineThickness="1dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_gray3"
+            android:visibility="gone" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v4.view.ViewPager>
+
+
+</android.support.design.widget.CoordinatorLayout>

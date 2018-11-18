@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.impakter.impakter.widget.textview.TextViewHeeboMedium
+        android:id="@+id/tv_brand_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_gray4"
+        android:padding="@dimen/dp_8"
+        android:text="HM Store"
+        android:textAllCaps="true"
+        android:visibility="gone"
+        android:textColor="@color/text_color_primary"
+        android:textSize="@dimen/sp_16" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_shipment_type"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_50"
+                    android:src="@drawable/ic_fedex" />
+
+                <RadioButton
+                    android:id="@+id/rad_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/type"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/sp_16" />
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:id="@+id/tv_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Stand" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/sp_16" />
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:id="@+id/tv_type_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="FedEx int" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pick_up_available"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/sp_16" />
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:id="@+id/tv_available"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Yes" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delivery_time"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/sp_16" />
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:id="@+id/tv_delivery_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="1-3 business days" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tax_dutices_change"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/sp_16" />
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:id="@+id/tv_tax"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shippment_charge"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/sp_16" />
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:id="@+id/tv_shipment_charge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_total"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/sp_16" />
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:id="@+id/tv_total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$20" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_10"
+            android:text="@string/have_no_shipment_service"
+            android:textSize="@dimen/sp_16"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@color/color_gray3" />
+</LinearLayout>

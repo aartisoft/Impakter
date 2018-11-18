@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AddNewAddressActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/sp_16"
+            android:src="@drawable/ic_back" />
+
+        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_16"
+            android:text="@string/save"
+            android:textColor="@color/text_color_blue"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:text="@string/add_new_address"
+        android:textColor="@color/text_color_primary"
+        android:textSize="@dimen/sp_17" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_8">
+
+        <com.impakter.impakter.widget.MyEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_gray_border"
+            android:hint="@string/first_name"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_10" />
+
+        <com.impakter.impakter.widget.MyEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_gray_border"
+            android:hint="@string/last_name"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_8">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/bg_button_gray_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:src="@drawable/location" />
+
+            <com.impakter.impakter.widget.MyEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/address"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingTop="@dimen/dp_10" />
+        </LinearLayout>
+
+
+        <com.impakter.impakter.widget.MyEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_gray_border"
+            android:hint="n"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_8">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_gray_border"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10">
+
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_gray_border"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10">
+
+            </Spinner>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_8">
+
+        <com.impakter.impakter.widget.MyEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_gray_border"
+            android:hint="@string/zip_code"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_10" />
+
+        <com.impakter.impakter.widget.MyEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_weight="1.8"
+            android:background="@drawable/bg_button_gray_border"
+            android:hint="@string/phone_number"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_14">
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@drawable/location" />
+
+        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_weight="1"
+            android:text="@string/set_as_the_primary_address"
+            android:textSize="@dimen/sp_15" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

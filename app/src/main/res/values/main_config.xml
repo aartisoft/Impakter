@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Impakter</string>
+
+
+    <string name="link_homepage"><u>http://yourcompanywebsite.com.au</u></string>
+    <string name="copy_right">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</string>
+    <string name="copy_right_two">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</string>
+
+    <string name="facebook_app_id">278616959399204</string> <!--hicomregister@gmail.com-->
+    <!-- key map create by hicomdeveloper@gmail.com-->
+    <string name="google_map_api">AIzaSyAJ4N5DIUUW5KZ2I6COC1EDVn1Wl8Mqe9M</string>
+
+    <string name="stripe_publishable_key">pk_test_IUn5r30g0TmA55rT7teSwr7X</string>
+    <string name="link_share">"http://hicomsolutions.mobileappstemplate.com/impakter/"</string>
+
+</resources>

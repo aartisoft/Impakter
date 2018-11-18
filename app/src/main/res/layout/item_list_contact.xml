@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingRight="@dimen/dp_16"
+    android:paddingTop="@dimen/dp_8">
+
+    <com.impakter.impakter.widget.SquareImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:src="@drawable/head1" />
+
+    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_weight="1"
+        android:text="Syd winton"
+        android:textSize="@dimen/sp_14" />
+
+    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_blue_button"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingLeft="@dimen/dp_40"
+        android:paddingRight="@dimen/dp_40"
+        android:paddingTop="@dimen/dp_8"
+        android:text="@string/send"
+        android:textAllCaps="true"
+        android:textColor="@color/text_color_white" />
+</LinearLayout>

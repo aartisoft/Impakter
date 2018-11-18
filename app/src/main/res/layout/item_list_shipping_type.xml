@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.impakter.impakter.widget.textview.TextViewHeeboMedium
+        android:id="@+id/tv_brand_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_gray4"
+        android:padding="@dimen/dp_8"
+        android:text="HM Store"
+        android:textAllCaps="true"
+        android:textColor="@color/text_color_primary"
+        android:textSize="@dimen/sp_16" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_courier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_10"
+            android:text="@string/have_no_shipment_service"
+            android:textSize="@dimen/sp_16"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

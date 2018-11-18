@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_product"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_180"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/trending" />
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_180"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:alpha="0.2"
+            android:background="@drawable/bg_gray"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                android:id="@+id/tv_sub_cateogory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ACCESSORIES"
+                android:textAllCaps="true"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/sp_20" />
+
+            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                android:id="@+id/tv_shop_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_white_no_border"
+                android:padding="@dimen/dp_8"
+                android:text="@string/shop_now"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/sp_18" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_4">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.impakter.impakter.widget.SquareImageView
+            android:id="@+id/iv_product"
+            android:layout_width="@dimen/dp_140"
+            android:layout_height="@dimen/dp_140"
+            android:scaleType="centerCrop"
+            android:src="@drawable/product" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_4">
+
+            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                android:id="@+id/tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Product name"
+                android:textColor="@color/text_color_primary" />
+
+            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                android:id="@+id/tv_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="BRAND" />
+
+            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$200"
+                android:textColor="@color/text_color_primary" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

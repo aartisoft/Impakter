@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ChangeAvatarActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_close" />
+
+        <LinearLayout
+            android:id="@+id/btn_choose_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                android:id="@+id/tv_folder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All photo" />
+
+            <ImageView
+                android:id="@+id/iv_dropdown"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:src="@drawable/ic_arrow_drop_down" />
+        </LinearLayout>
+
+        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/save"
+            android:textColor="@color/text_color_blue"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fr_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+</LinearLayout>

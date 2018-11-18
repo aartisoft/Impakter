@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingTop="@dimen/dp_8">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:src="@drawable/head1" />
+
+    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_weight="1"
+        android:text="Syd winton"
+        android:textSize="@dimen/sp_14" />
+
+    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+        android:id="@+id/btn_follow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:background="@drawable/bg_blue_button"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8"
+        android:text="@string/follow"
+        android:textAllCaps="true"
+        android:textColor="@color/text_color_white" />
+</LinearLayout>

@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_6"
+                android:text="@string/card_number"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <EditText
+                android:id="@+id/cardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_gray_border"
+                android:hint="Card Number"
+                android:inputType="number"
+                android:padding="@dimen/dp_10"
+                android:text=""
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_6"
+                android:text="Month/Year"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button_gray_border"
+                    android:ems="10"
+                    android:hint="Month"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:padding="@dimen/dp_10"
+                    android:textSize="@dimen/sp_16" />
+
+                <EditText
+                    android:id="@+id/year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button_gray_border"
+                    android:ems="10"
+                    android:hint="Year"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:padding="@dimen/dp_10"
+                    android:textSize="@dimen/sp_16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_6"
+                android:text="CVV Number"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <EditText
+                android:id="@+id/cvc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_gray_border"
+                android:hint="CVC"
+                android:inputType="number"
+                android:maxLength="3"
+                android:padding="@dimen/dp_10"
+                android:text=""
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:background="@drawable/bg_blue_button"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:text="Send"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+</LinearLayout>

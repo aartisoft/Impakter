@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_login" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.LoginActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_32">
+
+            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/sp_24" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_32"
+                android:theme="@style/TextLabel">
+
+                <com.impakter.impakter.widget.MyEditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/text_color_white"
+                    android:textColorHint="@color/text_color_white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <com.impakter.impakter.widget.MyTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/text_color_white"
+                android:theme="@style/TextLabel">
+
+                <com.impakter.impakter.widget.PasswordEditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/color_white"
+                    android:hint="@string/password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:textColor="@color/text_color_white"
+                    android:textColorHint="@color/text_color_white"
+                    android:theme="@style/EditTextTheme"
+                    app:useStrike="true" />
+
+            </com.impakter.impakter.widget.MyTextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/chk_remember_me"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/checkbox_selector"
+                        android:paddingLeft="@dimen/dp_4"
+                        android:textColor="@color/text_color_white" />
+
+                    <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/remember_me"
+                        android:textColor="@color/text_color_white" />
+                </LinearLayout>
+
+                <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                    android:id="@+id/tv_forgot_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/text_color_white" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_user"
+                android:textColor="@color/text_color_white" />
+
+            <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+                android:id="@+id/tv_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:text="@string/sign_up"
+                android:textColor="@color/text_color_white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.impakter.impakter.widget.textview.TextViewHeeboRegular
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_8"
+            android:background="@drawable/bg_button_main"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_12"
+            android:text="@string/sign_in"
+            android:textAllCaps="true"
+            android:textColor="@color/text_color_blue" />
+
+    </LinearLayout>
+</FrameLayout>
